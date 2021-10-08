@@ -4,22 +4,22 @@ const Home = () => import('../views/Home/index.vue')
 const Feedbacks = () => import('../views/Feedbacks/index.vue')
 const Credencials = () => import('../views/Credencials/index.vue')
 
-export const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/feedbacks',
-    name: 'Feedbacks',
+    path: '/feedback',
+    name: 'FeedBacks',
     component: Feedbacks,
     meta: {
       hasAuth: true
     }
   },
   {
-    path: '/credencials',
+    path: '/creedencials',
     name: 'Credencials',
     component: Credencials,
     meta: {
@@ -33,7 +33,7 @@ export const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
