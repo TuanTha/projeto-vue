@@ -11,9 +11,14 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^0.23.0",
     "core-js": "^3.6.5",
+    "tiny-emitter": "^2.1.0",
+    "vee-validate": "^4.5.2",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vue-toastification": "^1.7.11",
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

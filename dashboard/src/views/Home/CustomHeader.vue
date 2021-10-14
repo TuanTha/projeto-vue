@@ -12,10 +12,13 @@
         <div class="flex">
           <button
             class="px-6 py-2 font-bold rounded-full text-white focus:outline-none"
+            @click="() => emit('create-account')"
           >
             Crie uma conta
           </button>
           <button
+            id="header-login-button"
+            @click="() => emit('login')"
             class="px-6 py-2 font-bold bg-white rounded-full text-brand-main focus:outline-none"
           >
             Entrar
@@ -47,6 +50,9 @@
 
 <script>
 export default {
+  setup (_, { emit }) {
+    return { emit }
+  },
   name: 'CustomHeader'
 }
 </script>
@@ -62,7 +68,7 @@ export default {
 
 @media (min-width: 640px) {
   .header-group {
-    background-image: url(../../assets/images/png-transparent-several-blue-balloons-balloon-navy-blue-blue-balloon-blue-simple-greeting-card 2.png);
+    background-image: url(../../assets/images/blue_balloons.png);
     background-size: 628px;
     background-position: 90% 100%;
     background-repeat: no-repeat;

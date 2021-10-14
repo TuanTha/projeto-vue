@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/feedback',
+    path: '/feedbacks',
     name: 'FeedBacks',
     component: Feedbacks,
     meta: {

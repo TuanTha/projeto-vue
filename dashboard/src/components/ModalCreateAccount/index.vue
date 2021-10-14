@@ -1,5 +1,5 @@
 <template>
-  <h1>feedbacks</h1>
+  <h1> MODAL DE CRIAÇÃO DE CONTA</h1>
 </template>
 
 <script>
