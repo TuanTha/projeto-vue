@@ -5,8 +5,9 @@
 
 <script>
 import ModalFactory from './components/ModalFactory'
-
 export default {
-  components: { ModalFactory }
+  components: { ModalFactory },
+
+  setup () {}
 }
 </script>

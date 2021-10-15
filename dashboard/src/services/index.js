@@ -11,6 +11,19 @@ const httpClient = axios.create({
   baseURL: API_ENVS.local
 })
 
+httpClient.interceptors.response.use((response) => response,
+  (error) => {
+    const canThrowAnError = error.request.status === 0 ||
+      error.request.status === 500
+
+    if (canThrowAnError) {
+      throw new Error(error.mesage)
+    }
+
+    return error
+  }
+)
+
 export default {
   auth: AuthService(httpClient)
 }
